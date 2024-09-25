@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+    <title>nav</title>
+</head>
+<body>
+    <!--네비 부분-->
+    <!--메모
+    기본적으로 박스안에 내용물이 들어가도록 구조를 구성해놓았음.(ex. search부분은 text와 img파일을 포함하는 박스)
+    (할일1)
+    이미지 사진은 임시용 -> 크기는 css에서 px단위로 맞추어놓았음. -> 이미지파일만 변경해보고 이상하면 css파일 수정하기
+    (할일2)
+    border나 color css 수정필요함.
+    -->
+    <nav>
+        <!--menu 아이콘-->
+        <div id="menu">
+            <img id="menu_icon" src="images/heart.png" align="center"><!--메뉴아이콘-->
+        </div>
+        <!--검색, 장바구니, join, login-->
+        <nav id="navInNav">
+            <!--검색-->
+            <div id="search">
+                <input type="text" id="search_text" value="검색어">
+                <img id="search_icon" src="images/heart.png" align="center"><!--검색아이콘-->
+            </div>
+            <!--장바구니-->
+            <div id="basket">
+                <img id="basket_icon" src="images/heart.png" align="center"><!--장바구니아이콘-->
+            </div>
+            <!--join-->
+            <div id="join">JOIN</div>
+            <!--login-->
+            <div id="login">LOGIN</div>
+        </nav>
+    </nav>
+</body>
+</html>
