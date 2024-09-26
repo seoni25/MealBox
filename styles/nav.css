@@ -3,7 +3,7 @@
 	margin: 0px;
 }
 
-body{
+/*body{
     width: 1920px;
     height: 911px;
 }
@@ -11,7 +11,7 @@ nav{
     border-bottom:1px solid black;
     width: 1920px;
     height: 52px;
-}
+}*/
 
 #menu, #navInNav, #search, #basket, #join, #login {
     display:inline-block;

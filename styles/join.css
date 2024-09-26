@@ -1,0 +1,15 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+    width: 1920px;
+    height: 911px;
+}
+
+nav{
+    border-bottom:1px solid black;
+    width: 1920px;
+    height: 52px;
+}
