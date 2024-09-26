@@ -8,12 +8,57 @@
     <title>join</title>
 </head>
 <body>
-    <!--Ajax를 이용하여 코드 간결하게-->
+    <!--nav.html파일을 삽입하기위해 Ajax를 이용하여 코드 간결하게-->
     <nav include-html="nav.html"></nav>
     <script>includeHTML();</script>
 
-    <!--회원가입 부분-->
-    회원가입
-    
+    <!--회원가입 헤더 부분-->
+    <header>
+        <h1 id="join_title" align="center">회원가입</h1>
+        <div id="progress">
+            <hr>
+            <span id="progress_inputInfo">정보입력</span> 
+            <div id="progress_sign">
+                <img src="images/heart.png">
+            </div>
+            <span id="progress_complete">가입완료</span>
+            <hr>
+        </div>
+    </header>
+
+    <!--회원가입 메인 부분-->
+    <main id="join_input" align="center">
+        <div id="input_label">
+            아이디
+            <!--<div>
+                <label>아이디</label>
+                <img src="images/heart.png">
+            </div>
+            <div>
+                <label>비밀번호</label>
+                <img src="images/heart.png">
+            </div>
+            <div>
+                <label>비밀번호 확인</label>
+                <img src="images/heart.png">
+            </div>
+            <div>
+                <label>이름</label>
+            </div>
+            <div>
+                <label>전화번호</label>
+            </div>
+            <div>
+                <label>이메일</label>
+            </div>
+            <div>
+                <label>주소</label>
+            </div>-->
+        </div>
+        <div id="input_info">
+            input
+        </div>
+        <button id="check_ID">중복확인</button>
+    </main>
 </body>
 </html>

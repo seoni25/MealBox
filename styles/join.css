@@ -13,3 +13,74 @@ nav{
     width: 1920px;
     height: 52px;
 }
+
+header{
+    position: absolute;
+    transform: translate(466px, 95px);
+    width: 990px;
+    height: 119px;
+    border:1px solid black;
+}
+#join_title{
+    width: 187px;
+    height: 76px;
+    margin: 0 auto;
+    line-height: 76px;
+    /*border: 1px solid pink;*/
+}
+#progress{
+    width: 990px;
+    height: auto;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+hr, #progress_sign, #progress_inputInfo, #progress_complete{
+    display: inline-block;
+    text-align: center;
+    /*border: 1px solid yellowgreen*/
+}
+hr{
+    width:189px;
+}
+#progress_sign{
+    width: 10.42px;
+    height: 34px;
+    line-height: 34px;
+}
+#progress_sign > img{
+    width: 10.42px;
+    height: 20.83px;
+}
+#progress_inputInfo, #progress_complete{
+    width: 150px;
+    height: 34px;
+    line-height: 34px;
+}
+#join_input{
+    position: absolute;
+    transform: translate(600px, 255px);
+    width: 720px;
+    height: 520px;
+    border: 1px solid pink;
+}
+#input_label, #input_info, #check_ID{
+    display:inline-block;
+}
+#input_label{
+    transform: translateY(-8px);
+    width: 140px;
+    height: 520px;
+    text-align:left;
+    border: 1px solid black;
+}
+#input_info{
+    transform: translateY(-8px);
+    width: 420px;
+    height: 520px;
+    border: 1px solid black;
+}
+#check_ID{
+    width: 100px;
+    height: 40px;
+    border:1px solid black;
+}
