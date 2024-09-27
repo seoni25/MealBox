@@ -104,18 +104,59 @@ hr{
     margin: 0px 20px;
     /*border: 1px solid black;*/
 }
-#join_input > input{
+#id, #password, #check_password, #name, #address{
     width: 420px;
     height: 40px;
     border: 1px solid black;
     border-radius: 5px;
+}
+#phone, #email{
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+}
+#phone_part1, #phone_part2, #phone_part3{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#phone > span{
+    width: 22px;
+    height: 40px;
+    margin: 0px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    /*border: 1px solid black;*/
+}
+#email_id, #email_domain{
+    width: 190px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#email > span{
+    width: 28px;
+    height: 40px;
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    /*border: 1px solid black;*/
 }
 #join_input > .text {
     margin: 10px 0px;
     font-size:15px;
     color: red;/*초반에는 white로 설정. 나중에 입력을 빼먹었을 때, js이용하여 빨간색으로 바꾸는 용도*/
 }
-#check_ID{
+#buttons{
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+#buttons > button, #buttons > input{
+    margin: 0px 30px;
+}
+
+.style_button{
     width: 100px;
     height: 40px;
     font-size: 15px;
