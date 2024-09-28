@@ -13,7 +13,7 @@
     <nav include-html="nav.html"></nav>
     <script>includeHTML();</script>
 
-    <!--submit하면 form은 jsp파일로 넘겨지고 jsp파일에서 join_success.html로 redirect할 예정-->
+    <!--할일)submit하면 form은 jsp파일로 넘겨지고 jsp파일에서 join_success.html로 redirect하도록 구현하기-->
     <!--문제점2)post로 하면 visual studio code에서 실행이 잘 안됨. 그냥 크롬으로 열었을 때는 post로 해도 동작함.-->
     <form id="container" action="join_success.html" method="get">
         <!--회원가입 헤더 부분-->
@@ -42,20 +42,21 @@
                 <div><label for="address">주소</label></div>
             </div>
             <div id="join_input">
-                <input type="text" id="id">
+                <!--할일)제한조건 구현하기-->
+                <input type="text" id="id" required>
                 <div class="text">이미 존재하는 아이디입니다.</div>
-                <input type="text" id="password">
+                <input type="password" id="password" required>
                 <div class="text">특수문자, 소문자, 숫자를 포함하며 8자 이상이어야 합니다.</div>
-                <input type="text" id="check_password">
+                <input type="password" id="check_password" required>
                 <div class="text">비밀번호가 일치하지 않습니다.</div>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
                 <div class="text">이름은 필수입력 항목입니다.</div>
                 <div id="phone">
-                    <input type="text" id="phone_part1">
+                    <input type="text" id="phone_part1" maxlength="3" required>
                     <span>-</span>
-                    <input type="text" id="phone_part2">
+                    <input type="text" id="phone_part2" maxlength="4" required>
                     <span>-</span>
-                    <input type="text" id="phone_part3">
+                    <input type="text" id="phone_part3" maxlength="4" required>
                 </div>
                 <div class="text">전화번호는 필수입력 항목입니다.</div>
                 <div id="email">
@@ -70,7 +71,7 @@
             <div id="join_checkID"><button type="button" class="style_button" id="check_ID">중복확인</button></div>
         </main>
         <div id="buttons">
-            <!--버튼 링크는 나중에 js파일에서 함수화해가지고 연결하여 가독성 높이기-->
+            <!--할일)버튼 링크는 나중에 js파일에서 함수화해가지고 연결하여 가독성 높이기-->
             <!--버튼 태그에 type을 명시하는 이유: button태그의 기본값이 submit이기 때문에-->
             <button type="button" class="style_button" id="before" onclick="location.href='#'">이전</button>
             <input type="submit" class="style_button" id="after" value="다음">
