@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/join.css"/>
     <script src="scripts/includeHTML.js"></script>
-    <title>join</title>
+    <title>회원가입</title>
 </head>
 <body>
-    <!--nav.html파일을 삽입하기위해 Ajax를 이용하여 코드 간결하게-->
+    <!--nav.html파일을 삽입하기위해 Ajax를 이용하여 코드 간결하게하기 위한 코드-->
+    <!--문제점1)현재는 visual studio code에서만 가능. 로컬서버를 제공해주기 때문에. 따라서 크롬으로 열려면 node.js를 사용해야 할 듯.-->
     <nav include-html="nav.html"></nav>
     <script>includeHTML();</script>
 
-    <form id="container" action="">
+    <!--submit하면 form은 jsp파일로 넘겨지고 jsp파일에서 join_success.html로 redirect할 예정-->
+    <!--문제점2)post로 하면 visual studio code에서 실행이 잘 안됨. 그냥 크롬으로 열었을 때는 post로 해도 동작함.-->
+    <form id="container" action="join_success.html" method="get">
         <!--회원가입 헤더 부분-->
         <header>
             <h1 id="join_title" align="center">회원가입</h1>
@@ -30,9 +33,9 @@
         <!--회원가입 메인 부분-->
         <main id="join_main">
             <div id="join_label">
-                <div><label for="id">아이디 *</label></div>
-                <div><label for="password">비밀번호 *</label></div>
-                <div><label for="check_password">비밀번호 확인 *</label></div>
+                <div><label for="id">아이디 <font color="red">*</font></label></div>
+                <div><label for="password">비밀번호 <font color="red">*</font></label></div>
+                <div><label for="check_password">비밀번호 확인 <font color="red">*</font></label></div>
                 <div><label for="name">이름</label></div>
                 <div><label for="phoneNum">전화번호</label></div>
                 <div><label for="email">이메일</label></div>
@@ -64,10 +67,12 @@
                 <input type="text" id="address">
                 <div class="text"><font color="white">비어있습니다</font></div>
             </div>
-            <div id="join_checkID"><button class="style_button" id="check_ID">중복확인</button></div>
+            <div id="join_checkID"><button type="button" class="style_button" id="check_ID">중복확인</button></div>
         </main>
         <div id="buttons">
-            <button class="style_button" id="before">이전</button>
+            <!--버튼 링크는 나중에 js파일에서 함수화해가지고 연결하여 가독성 높이기-->
+            <!--버튼 태그에 type을 명시하는 이유: button태그의 기본값이 submit이기 때문에-->
+            <button type="button" class="style_button" id="before" onclick="location.href='#'">이전</button>
             <input type="submit" class="style_button" id="after" value="다음">
         </div>
     </form>
