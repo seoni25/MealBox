@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/join_success.css"/>
+    <!--nav.html파일을 삽입하여 코드를 간결하게 하는 방법=html파일에 원하는 html파일을 불러온다
+    html을 불러오는 방법은 두가지. 두가지 모두 서버가 필요함
+    1안) ajax를 이용하는 방법
+    2안) jquery를 이용하는 방법
+    찾아본 결과, jquery를 사용하는 것이 일반적이라고 하지만, vs code에서 실행하면 보이지 않음.
+    ajax를 사용하면 vs code에서 로컬서버를 제공해주기 때문에 실행 가능하다고 함.
+    *사용 시, nav.css의 id명과 겹치지 않도록 주의하기
+    -->
+
+    <!--1안-->
     <script src="scripts/includeHTML.js"></script>
+     <!--2안-->
+    <!--<script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("nav").load(nav.html);
+        })
+    </script>-->
     <title>회원가입 완료</title>
 </head>
 <body>
-    <!--nav.html파일을 삽입하기위해 Ajax를 이용하여 코드 간결하게-->
-    <!--문제점1)현재는 visual studio code에서만 가능. 로컬서버를 제공해주기 때문에. 따라서 크롬으로 열려면 node.js를 사용해야 할 듯.-->
+    
+    <!--1안-->
     <nav include-html="nav.html"></nav>
     <script>includeHTML();</script>
-
+    <!--2안-->
+    <!--<nav id="nav"></nav>-->
     <div id="container">
         <!--회원가입 헤더 부분-->
         <header>
