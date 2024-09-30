@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/join_success.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/joinSuccess.css"/>
     <!--nav.html파일을 삽입하여 코드를 간결하게 하는 방법=html파일에 원하는 html파일을 불러온다
     html을 불러오는 방법은 두가지. 두가지 모두 서버가 필요함
     1안) ajax를 이용하는 방법
@@ -14,7 +14,7 @@
     -->
 
     <!--1안-->
-    <script src="scripts/includeHTML.js"></script>
+    <script src="../js/includeHTML.js"></script>
      <!--2안-->
     <!--<script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript">
@@ -27,7 +27,7 @@
 <body>
     
     <!--1안-->
-    <nav include-html="nav.html"></nav>
+    <nav include-html="../html/nav.html"></nav>
     <script>includeHTML();</script>
     <!--2안-->
     <!--<nav id="nav"></nav>-->
@@ -39,7 +39,7 @@
                 <hr>
                 <span id="progress_inputInfo">정보입력</span> 
                 <div id="progress_sign">
-                    <img src="images/heart.png">
+                    <img src="../images/heart.png">
                 </div>
                 <span id="progress_complete">가입완료</span>
                 <hr>
@@ -54,8 +54,8 @@
         </main>
         <div id="joinSuccess_buttons">
             <!--할일)버튼 링크는 나중에 js파일에서 함수화해가지고 연결하여 가독성 높이기-->
-            <button class="style_button" onclick="location.href='#'">로그인</button>
-            <button class="style_button" onclick="location.href='#'">메인으로</button>
+            <button class="style_button" onclick="location.href='../html/login.html'">로그인</button>
+            <button class="style_button" onclick="location.href='../html/main.html'">메인으로</button>
         </div>
     </div>
 </body>

@@ -28,10 +28,10 @@ nav{
 }
 #navInNav {
     border:none;
-    position: absolute;
-    transform: translate(1367px, 5px);
+    float: right;
     width: 553px;
     height: 40px;
+    
 }
 #search, #basket, #join, #login{
     margin-right: 20px;

@@ -5,19 +5,19 @@
 }
 
 body{
-    width: 1920px;
-    height: 911px;
+    width: 100%;
 }
 /***네비 부분***/
 nav{
     border-bottom:1px solid black;
-    width: 1920px;
+    width: 100%;
     height: 52px;
 }
 /***컨테이너 부분***/
 #container{
     position:absolute;
-    transform: translate(466px, 50px);
+    left:50%;
+    transform: translate(-50%, 50px);
     width: auto;
     height: auto;
     /*background-color: yellow;*/
