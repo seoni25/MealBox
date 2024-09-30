@@ -1,7 +1,17 @@
+/*login.html에 적용되는 css파일*/
 /***초기화***/
 *{
     padding: 0px;
     margin: 0px;
+}
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1;
+}
+@supports (font-variation-settings: normal) {
+   :root {
+     font-family: InterVariable, sans-serif;
+   }
 }
 body{
     width: 100%;
@@ -32,6 +42,7 @@ header{
     /*border: 1px solid pink;*/
 }
 hr{
+    margin-top: 17px;
     border: 1px solid black;
 }
 /***메인 부분***/
